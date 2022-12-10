@@ -1,0 +1,10 @@
+﻿@page
+@using ContosoCrafts.WebSite.Components
+@model DeveloperModel
+@{
+    ViewData["Title"] = "Developer List";
+}
+<h1>@ViewData["Title"]</h1>
+@(await Html.RenderComponentAsync<DeveloperList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
